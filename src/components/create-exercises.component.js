@@ -79,10 +79,10 @@ export default class CreateEcercises extends Component {
 
         console.log(exercise);
 
-        await axios.post('https://malshan-hue.github.io/MERNDemo/exercises/add', exercise)
+        await axios.post('http://localhost:5000/exercises/add', exercise)
             .then(res => console.log(res.data));
         
-        window.location = 'https://malshan-hue.github.io/MERNDemo/'
+        window.location = '/'
     }
 
     render() {

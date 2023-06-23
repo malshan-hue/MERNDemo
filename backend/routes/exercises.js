@@ -2,7 +2,7 @@ const router = require('express').Router(); //router object from express framewo
 let Exercise = require('../models/exercise.model'); //mongoose model 
 
 //first route that handles http get requests on /exercises url path
-router.route('MERNDemo/').get((req, res) => {
+router.route('/').get((req, res) => {
 
     Exercise.find()
         .then(ecercises => res.json(ecercises))

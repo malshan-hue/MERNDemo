@@ -10,7 +10,7 @@ const Excercise = props => (
         <td>{props.exercise.duration}</td>
         <td>{props.exercise.data}</td>
         <td>
-            <Link to={"/edit/" + props.exercise._id} >edit</Link> | <button className="btn btn-warning btn-sm" onClick={() => {props.deleteExercise(props.exercise._id)}}>delete</button>  
+            <Link to={"MERNDemo/edit/" + props.exercise._id} >edit</Link> | <button className="btn btn-warning btn-sm" onClick={() => {props.deleteExercise(props.exercise._id)}}>delete</button>  
         </td>
 
     </tr>

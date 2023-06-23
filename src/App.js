@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <br/>
         <Routes>
-          <Route path="/" element={<ExcerciseList/>} />
+          <Route path="MERNDemo/" element={<ExcerciseList/>} />
           <Route path="/edit/:id" element={<EditExercises/>} />
           <Route path="/create" element={<CreateExcercise/>} />
           <Route path="/user" element={<CreateUser/>} />

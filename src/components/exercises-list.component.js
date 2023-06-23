@@ -28,7 +28,7 @@ export default class ExercisesList extends Component {
     }
 
     componentDidMount(){
-        axios.get('https://malshan-hue.github.io/exercises/')
+        axios.get('http://localhost:5000/exercises/')
             .then(Response => {
                 this.setState({exercises: Response.data})
             })
@@ -38,7 +38,7 @@ export default class ExercisesList extends Component {
     }
 
     deleteExercise(id){
-        axios.delete('https://malshan-hue.github.io/exercises/'+id)
+        axios.delete('http://localhost:5000/exercises/'+id)
             .then(res => console.log(res.data))
         
         // After deleting the exercise, the exercise is removed from the exercises array.

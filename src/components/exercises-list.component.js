@@ -8,9 +8,9 @@ const Excercise = props => (
         <td>{props.exercise.username}</td>
         <td>{props.exercise.description}</td>
         <td>{props.exercise.duration}</td>
-        <td>{props.exercise.data}</td>
+        <td>{props.exercise.date}</td>
         <td>
-            <Link to={"MERNDemo/edit/" + props.exercise._id} >edit</Link> | <button className="btn btn-warning btn-sm" onClick={() => {props.deleteExercise(props.exercise._id)}}>delete</button>  
+            <Link to={"/edit/" + props.exercise._id} >edit</Link> | <button className="btn btn-warning btn-sm" onClick={() => {props.deleteExercise(props.exercise._id)}}>delete</button>  
         </td>
 
     </tr>
@@ -28,7 +28,7 @@ export default class ExercisesList extends Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/exercises/')
+        axios.get('http://localhost:5000/exercises')
             .then(Response => {
                 this.setState({exercises: Response.data})
             })

@@ -8,17 +8,17 @@ export default class Navbar extends Component {
         return (
             
             <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-                <Link to="MERNDemo/" className="navbar-brand">Excercise Tracker</Link>
+                <Link to="/" className="navbar-brand">Excercise Tracker</Link>
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav mr-auto">
                         <li className="navbar-item">
-                            <Link to="MERNDemo/" className="nav-link">Excercises</Link>
+                            <Link to="/" className="nav-link">Excercises</Link>
                         </li>
                         <li className="navbar-item">
-                            <Link to="MERNDemo/create" className="nav-link">Create Excercise Log</Link>
+                            <Link to="/create" className="nav-link">Create Excercise Log</Link>
                         </li>
                         <li className="navbar-item">
-                            <Link to="MERNDemo/user" className="nav-link">Create User</Link>
+                            <Link to="/user" className="nav-link">Create User</Link>
                         </li>
                     </ul>
                 </div>

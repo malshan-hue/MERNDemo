@@ -18,10 +18,10 @@ function App() {
         <Navbar />
         <br/>
         <Routes>
-          <Route path="MERNDemo/" element={<ExcerciseList/>} />
-          <Route path="MERNDemo/edit/:id" element={<EditExercises/>} />
-          <Route path="MERNDemo/create" element={<CreateExcercise/>} />
-          <Route path="MERNDemo/user" element={<CreateUser/>} />
+          <Route path="/" element={<ExcerciseList/>} />
+          <Route path="/edit/:id" element={<EditExercises/>} />
+          <Route path="/create" element={<CreateExcercise/>} />
+          <Route path="/user" element={<CreateUser/>} />
         </Routes>
       </div>
     </BrowserRouter>
